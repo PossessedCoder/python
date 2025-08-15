@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Bumzhch</title>
 </head>
 <body>
+    <h1>Цитата</h1>
     <form action="/post_quote" method="post">
-        <input type="text" size="40" name="PostText">
-        <button type="submit" id="post">Запостить цитату</button>
+        <input type="text" size="40" name="PostText" class="txt">
+        <button type="submit" class="btn" id="post">Запостить цитату</button>
+        <select title="Под чем произошло" name="Selector">
+            <option>Трезвость ума</option>
+            <option>Пьяная династия</option>
+            <option>Объёбанный конец</option>
+        </select>
+        <br>
+        <h1>Автор</h1>
+        <input type="text" size="40" name="Author" class="txt" title="Автор цитаты">
     </form>
 </body>
 </html>
