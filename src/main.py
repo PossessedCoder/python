@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+import json
 app = Flask(__name__)
 
 @app.route("/")
@@ -15,8 +16,8 @@ def add_quote():
         f.write(f'<h1>{request.form['PostText']}. {request.form['Selector']}. Автор цитаты: {request.form['Author']}</h1>\n')
     return redirect('/')
 
-app.run(debug=True)
-# def get_quotes():
-#     with open("main_page.html") as f:
-#         return f.readlines()
+@app.route('/api/quotes/', methods=['GET'])
+def get_quotes():
+    return render_template('quotes.html')
 
+app.run(port=5000, debug=True)

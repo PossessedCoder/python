@@ -8,7 +8,8 @@
 	border-radius: 5px;
 	position: relative;
 	box-sizing: border-box;
-	transition: all 500ms ease; 
+	transition: all 500ms ease;
+    margin: 10px; 
 }
 .btn:hover {
 	background: rgba(0,0,0,0);
@@ -16,5 +17,9 @@
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
 .txt {
+    margin: 10px;
     width: 90%;
+}
+h1 {
+    margin: 10px;
 }
